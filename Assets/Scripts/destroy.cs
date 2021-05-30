@@ -12,7 +12,7 @@ public class destroy : MonoBehaviour
     private GameObject ssilkaNaObject;
     void Start()
     {
-        ssilkaNaObject = GameObject.Find("modelka");
+        ssilkaNaObject = GameObject.Find("Player");
         timer = 0f;
         time = 0.5f;
         col = false;
