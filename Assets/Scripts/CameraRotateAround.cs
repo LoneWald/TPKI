@@ -7,7 +7,7 @@ public class CameraRotateAround : MonoBehaviour
 
 	public Transform target;
 	public Vector3 offset;
-	public float sensitivity = 3; // чувствительность мышки
+	public float sensitivity = 0.5f; // чувствительность мышки
 	public float limit = 80; // ограничение вращения по Y
 	public float zoom = 0.25f; // чувствительность при увеличении, колесиком мышки
 	public float zoomMax = 10; // макс. увеличение

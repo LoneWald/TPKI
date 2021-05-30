@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.tag == "Finish")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(6);
         }
     }
 }
