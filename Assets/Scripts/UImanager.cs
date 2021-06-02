@@ -16,7 +16,7 @@ public class UImanager : MonoBehaviour
     }
     public void NewGame()
     {
-        SceneManager.LoadScene(0); // добавить сброс уровней
+        SceneManager.LoadScene("Menu"); // добавить сброс уровней
     }
 
     public void Exit()
@@ -26,7 +26,7 @@ public class UImanager : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 
     public void Manual()

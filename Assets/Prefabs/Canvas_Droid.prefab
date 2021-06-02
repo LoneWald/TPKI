@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1828226297414078415}
   - component: {fileID: 1828226297414078411}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_Droid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

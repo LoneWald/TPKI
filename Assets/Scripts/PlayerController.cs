@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine.UI;
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        /*  for stick
         float hoverHorizontal = joystick.Horizontal;
         float hoverVertcal =  joystick.Vertical;
         movement_t = Vector3.ProjectOnPlane(cam.GetComponent<CameraRotateAround>().napr, new Vector3(0, 1, 0)).normalized;
@@ -40,9 +41,22 @@ public class PlayerController : MonoBehaviour
             rotatedVector = Quaternion.Euler(0,_ang,0) * movement_t;
             rb.AddForce(rotatedVector * speed * movement.magnitude);
         }
+        */
+        float hoverHorizontal = Input.GetAxis("Horizontal");
+        float hoverVertcal =  Input.GetAxis("Vertical");
+        movement_t = Vector3.ProjectOnPlane(cam.GetComponent<CameraRotateAround>().napr, new Vector3(0, 1, 0)).normalized;
+        movement = new Vector3(hoverHorizontal, 0, hoverVertcal);
+        if (movement != Vector3.zero)
+            _ang = Vector3.SignedAngle(movement_t, movement, Vector3. up) + Vector3.SignedAngle(Vector3.forward, movement_t, Vector3. up);
+        else _ang = 0;
+        if (movement != Vector3.zero)
+        {
+            rotatedVector = Quaternion.Euler(0,_ang,0) * movement_t;
+            rb.AddForce(rotatedVector * speed * movement.magnitude);
+        }
 
         if(Input.GetButton("Cancel"))
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("Menu");
         if (Input.GetKey("r")){
             transform.position = startPos;
             transform.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
@@ -65,10 +79,6 @@ public class PlayerController : MonoBehaviour
             transform.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
             rb.velocity = Vector3.zero;
             collisiya = true;
-        }
-        if (other.gameObject.tag == "Finish")
-        {
-            SceneManager.LoadScene(6);
         }
     }
 }
