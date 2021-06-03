@@ -85,9 +85,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  CheckPointObeliskPrefab: {fileID: 3398626431368237993, guid: 4ca77f848ebd8754faffce33df60fe1a, type: 3}
   speed: 1
   startPos: {x: 0, y: 0.55, z: 0}
-  joystick: {fileID: 0}
   collisiya: 0
   movement: {x: 0, y: 0, z: 0}
   movement_t: {x: 0, y: 0, z: 0}
@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  CheckPointObeliskPrefab: {fileID: 0}
   speed: 1
   startPos: {x: 0, y: 1, z: 0}
-  joystick: {fileID: 0}
   collisiya: 0
   movement: {x: 0, y: 0, z: 0}
   movement_t: {x: 0, y: 0, z: 0}

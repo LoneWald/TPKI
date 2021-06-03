@@ -10,6 +10,7 @@ public class ObeliskMove : MonoBehaviour
     private float timer = 0;
     public float pause = 0;
     private int count = 0;
+    public Vector3 rotation = new Vector3(0, 0, 0);
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class ObeliskMove : MonoBehaviour
                 count++;
                 timer = count * Time.deltaTime;
                 transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
+                transform.Rotate(rotation);
             }
             else
             {

@@ -243,6 +243,7 @@ MonoBehaviour:
   speed: 0.1
   time: 1
   pause: 1
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &14680450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,6 +497,7 @@ MonoBehaviour:
   speed: 0.2
   time: 1
   pause: 0
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &109604061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,6 +894,7 @@ MonoBehaviour:
   speed: 0.1
   time: 1
   pause: 0
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &201937955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1013,7 @@ MonoBehaviour:
   speed: 0.1
   time: 1
   pause: 0
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &218872042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1675,6 +1679,7 @@ MonoBehaviour:
   speed: 0.1
   time: 1
   pause: 1
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &358288798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5690859013653158969, guid: ca7b2c0882e48514995cc8c0b48ea0df, type: 3}
@@ -2071,6 +2076,7 @@ MonoBehaviour:
   speed: 0.2
   time: 1
   pause: 1
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &467025707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3743395016635978625, guid: a6a57e3aa02d53a43a1a884317ab1809, type: 3}
@@ -3679,7 +3685,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933614162}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e696d7ae5dbb4d04e81a82ef6772f4d2, type: 3}
@@ -5330,7 +5336,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278738353}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e696d7ae5dbb4d04e81a82ef6772f4d2, type: 3}
@@ -5909,7 +5915,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347538575}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e696d7ae5dbb4d04e81a82ef6772f4d2, type: 3}
@@ -6697,6 +6703,7 @@ MonoBehaviour:
   speed: 0.2
   time: 1
   pause: 2
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1590941762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3743395016635978625, guid: a6a57e3aa02d53a43a1a884317ab1809, type: 3}
@@ -7026,6 +7033,7 @@ MonoBehaviour:
   speed: 0.2
   time: 1
   pause: 3
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &1697139549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7684,7 +7692,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845091572}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e696d7ae5dbb4d04e81a82ef6772f4d2, type: 3}
