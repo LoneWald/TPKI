@@ -40,16 +40,13 @@ public class PlayerController : MonoBehaviour
             
         if (Input.GetKeyDown(KeyCode.R))
             ReturnToPosition();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Menu");
+
     }
     void FixedUpdate()
     {
-
         Movement();
-
-        if (Input.GetKey(KeyCode.Escape))
-            SceneManager.LoadScene("Menu");
-
-        
         if (collisiya == true)
         {
             count++;
