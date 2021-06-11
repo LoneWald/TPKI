@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,7 +16,7 @@ public class UImanager : MonoBehaviour
     }
     public void NewGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Menu"); // добавить сброс уровней
     }
 
     public void Exit()
@@ -26,11 +26,26 @@ public class UImanager : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 
     public void Manual()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(7);
+    }
+
+    public void LoadScene(int numScene)
+    {
+        SceneManager.LoadScene(numScene);
+    }
+
+    public void ShowPanel(GameObject obj)
+    {
+        obj.SetActive(true);
+    }
+
+    public void HidePanel(GameObject obj)
+    {
+        obj.SetActive(false);
     }
 }
